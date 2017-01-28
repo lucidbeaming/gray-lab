@@ -19,7 +19,8 @@ window.onload = function() {
     Object.keys(bad).forEach(function(key, index) {
         var yepyep = "If your " + key + " are " + bad[key] + ", that's not " + gud[index];
         console.log(yepyep);
-        document.getElementById("whatisit").appendChild("<li>" + yepyep + "</li>");
+        newli = makenode(yepyep)
+        document.getElementById("whatisit").appendChild(newli);
     });
 
 };
